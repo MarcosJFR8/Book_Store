@@ -1,8 +1,13 @@
+body{
+    min-height: 150rem;
+    padding-top: 10rem;    
+}
+
 h1{
     color: rgb(42, 83, 230);
 }
 
-.bookcover{
-    width: auto;
+img.bookcover{
+    width: 400px;
     height: 300px;
 }
