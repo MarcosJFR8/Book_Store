@@ -17,7 +17,7 @@
 <body>    
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">BookStore</a>
+            <a class="navbar-brand" href="{% url 'home' %}">BookStore</a>
 
             <button class="navbar-toggler" type="button" \ 
             data-bs-toggle="collapse" data-bs-target="#navbarCollapse" \
@@ -30,6 +30,9 @@
             <div class="collapse navbar-collapse" \
             id="navbarCollab">
             <ul class="navbar-nav me-auto mb-2 mb-mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
                         <form action="{% url 'logout' %}" method="post">
@@ -46,8 +49,7 @@
                         <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
                     </li>
 
-                {% endif %}
-                    
+                {% endif %}      
             </ul>
 
             </div>
