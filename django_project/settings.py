@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
+    'books.apps.BooksConfig',
     # Third Party
     'crispy_forms',
     'crispy_bootstrap5',
