@@ -40,7 +40,16 @@ INSTALLED_APPS = [
     #local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
+    # Third Party
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
+
+#django-crispy-forms
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
