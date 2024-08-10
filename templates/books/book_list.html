@@ -2,6 +2,8 @@
 
 {% block content %}
     {% for book in book_list %}
-        <a href="">{{ book.title }}</a>
+    <div>
+        <h2><a href="">{{ book.title }}</a></h2>
+    </div>
     {% endfor %}
 {% endblock content %}
