@@ -4,8 +4,14 @@
 
 {% block content %}
     <div class="book-detail">
-        <h2><a href="">{{ book.title }}</a></h2>
-        <p>Author:{{ book.author }}</p>
+        <h2 style="display: contents;">
+            <a 
+            href="" 
+            class="card-title" 
+            style="display: contents;">{{ book.title }}
+            </a>
+        </h2>
+        <p class="fw-semibold">Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
     </div>
 {% endblock content %}
