@@ -5,13 +5,19 @@
 {% block content %}
     <div class="book-detail">
         <h2 style="display: contents;">
-            <a 
-            href="" 
-            class="card-title" 
-            style="display: contents;">{{ book.title }}
+            <a href="" class="card-title" style="display: contents;">
+                {{ book.title }}
             </a>
         </h2>
         <p class="fw-semibold">Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
+        <div>
+            <h3>Reviews</h3>
+            <ul>
+                {% for review in book.reviews.all %}
+                    <li> <h5>{{ review.review }}</h5> {{ review.author }}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 {% endblock content %}
