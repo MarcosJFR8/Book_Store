@@ -9,6 +9,7 @@
                 {{ book.title }}
             </a>
         </h2>
+        <img width="200px" class="book-cover" src="{{ book.cover.url }}" alt="{{ book.title }}">
         <p class="fw-semibold">Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
         <div>
