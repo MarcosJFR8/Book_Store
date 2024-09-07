@@ -9,9 +9,9 @@
                 {{ book.title }}
             </a>
         </h2>
-        {% if book.cover %}
-            <img width="300px" style="display: flex;" class="book-cover" src="{{ book.cover.url }}" alt="{{ book.title }}">
-        {% endif %}
+            {% if book.cover %}
+                <img width="300px" style="display: flex;" class="book-cover" src="{{ book.cover.url }}" alt="{{ book.title }}">
+            {% endif %}
         <p class="fw-semibold">Author:{{ book.author }}</p>
         <p>Price:{{ book.price }}</p>
         <div>
