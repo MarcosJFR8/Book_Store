@@ -12,3 +12,7 @@ class BookListView(LoginRequiredMixin, ListView):
 class BookDetailView(DetailView):
     model = Book
     template_name = 'books/book_detail.html'
+
+class SearchResultsView(ListView):
+    model = Book
+    template_name = 'books/search.html'
